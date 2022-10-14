@@ -24,9 +24,7 @@ app.engine('hbs', expressHandlebars({
     },
 }))
 
-app.get('/', function (req, res) {
-    res.send('Hello world')
-})
+app.get('/', employeeController);
 app.set('view engine', 'hbs');
 
 const port = process.env.PORT || 3000
