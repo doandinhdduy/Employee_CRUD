@@ -1,0 +1,29 @@
+.navbar-brand {
+    background: rgb(61, 175, 32);
+    float: none;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: red;
+    margin-left: 10%
+}
+
+.tableinformation {
+    margin-left: 5.9%;
+    background-color: rgb(221, 14, 118);
+    opacity: .9;
+    margin-top: 15px;
+    padding: 20px;
+}
+
+.bg {
+    background-image: url('/img/background.jpg');
+    max-width: 90%;
+}
+
+.titlenname {
+    color: rgb(86, 245, 12);
+    font-weight: bold;
+}

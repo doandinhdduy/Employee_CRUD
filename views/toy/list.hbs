@@ -1,16 +1,16 @@
 <h3>
-    <a href="/employee" class="btn btn-danger">
-        <i class="fa fa-plus"> </i> Create New Staff
+    <a href="/toy" class="btn btn-danger">
+        <i class="fa fa-plus"> </i> Create New Product
     </a>
-    Staff List
+    Toy List
 </h3>
 <table class="table table-striped">
     <thead>
         <tr>
             <th>Full Name</th>
             <th>Email</th>
-            <th>Mobile</th>
-            <th>City</th>
+            <th>Price</th>
+            <th>Product</th>
             <th></th>
         </tr>
     </thead>
@@ -19,13 +19,13 @@
         <tr>
             <td>{{this.fullName}}</td>
             <td>{{this.email}}</td>
-            <td>{{this.mobile}}</td>
-            <td>{{this.city}}</td>
+            <td>{{this.price}}</td>
+            <td>{{this.product}}</td>
             <td>
-                <a href="/employee/{{this._id}}">
+                <a href="/toy/{{this._id}}">
                     <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
                 </a>
-                <a href="/employee/delete/{{this._id}}"
+                <a href="/toy/delete/{{this._id}}"
                     onclick="return confirm('Are you sure to delete this record?');">
                     <i class="fa fa-trash fa-lg" aria-hidden="true">
 

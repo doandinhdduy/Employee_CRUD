@@ -1,0 +1,39 @@
+<h2 class="titlenname" style = "text-align: center">
+    <img src="/img/Toy.jpg" style="max-width: 10%;">
+    {{viewTitle}}
+</h2>
+<form action="/toy" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="{{toy._id}}">
+    <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" class="form-control" name="fullName" value="{{toy.fullName}}" placeholder="Full Name">
+        <div class="text-danger">
+            {{toy.fullNameError}}
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" name="email" value="{{toy.email}}" placeholder="Email">
+        <div class="text-danger">
+            {{toy.emailError}}
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group md-6">
+            <label>Price</label>
+            <input type="text" name="price" placeholder="price" value="{{toy.price}}" class="form-control">
+
+        </div>
+        <div class="form-group md-6">
+            <label>Product</label>
+            <input type="text" name="product" placeholder="product" value="{{toy.product}}" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i>Submit</button>
+        <a href="/toy/list" class="btn btn-danger">
+            <i class="fa fa-list-alt"></i>View Toy
+        </a>
+    </div>
+</form>

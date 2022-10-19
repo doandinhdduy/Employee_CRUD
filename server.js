@@ -4,6 +4,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const expressHandlebars = require('express-handlebars');
 const employeeController = require('./controller/employeeController');
+const toyController = require('./controller/toyController');
 
 var app = express();
 
@@ -11,9 +12,10 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
+app.use(express.static(path.join(__dirname, 'public')))
+
 app.use(bodyParser.json());
 app.set('views', path.join(__dirname, '/views/'))
-
 app.engine('hbs', expressHandlebars({
     extname: 'hbs',
     defaultLayout: 'mainLayout',
@@ -33,3 +35,4 @@ app.listen(port, () => {
 })
 
 app.use('/employee', employeeController);
+app.use('/toy', toyController);

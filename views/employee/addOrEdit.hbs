@@ -1,4 +1,7 @@
-<h3>{{viewTitle}}</h3>
+<h2 class="titlenname" style = "text-align: center">
+    <img src="/img/Toy.jpg" style="max-width: 10%;">
+    {{viewTitle}}
+</h2>
 <form action="/employee" method="POST" autocomplete="off">
     <input type="hidden" name="_id" value="{{employee._id}}">
     <div class="form-group">
@@ -30,7 +33,7 @@
     <div class="form-group">
         <button type="submit" class="btn btn-info"><i class="fa fa-database"></i>Submit</button>
         <a href="/employee/list" class="btn btn-danger">
-            <i class="fa fa-list-alt"></i>View All
+            <i class="fa fa-list-alt"></i>View Staff
         </a>
     </div>
 </form>
